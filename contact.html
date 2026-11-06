@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+     <link rel="stylesheet" href="cdn/slick.css">
+    <link rel="stylesheet" href="cdn/slick-theme.css">
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <script src="cdn/jquery-3.7.1.min.js"></script>
+    <script src="cdn/slick.min.js"></script>
+
+
+ 
+</head>
+<body>
+
+  <header class="header">
+
+    <!-- Left Side -->
+    <div class="header-left">
+
+        <a href="index.html" class="logo">
+            Elegance Boutique
+        </a>
+
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="header-right">
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="bridal.html">Bridal</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" type="button">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+  <section class="contact-section" id="contact-us">
+    <div class="contact-container">
+        
+    
+        <div class="contact-info">
+            <div>
+                <h1>Contact Us</h1>
+                <p class="intro">Have questions about our collections or orders? Reach out to us anytime!</p>
+                
+                <div class="info-box" id="address">
+                    <h3>Address</h3>
+                    <p>Shop # F-8, Saima Pari Mall, Hyderi, Block H North Nazimabad Town, Karachi, 75300, Pakistan</p>
+                </div>
+
+                <div class="info-box" id="email-phone">
+                    <h3>Email & Phone</h3>
+                    <p>info@eleganceboutique.com</p>
+                    <p>+92 342 5914543</p>
+                </div>
+            </div>
+
+          <div class="contact-details">
+
+    <div class="detail-item">
+        <a href="https://www.google.com/maps/search/?api=1&query=Shop+F-8+Saima+Pari+Mall+Hyderi+Block+H+North+Nazimabad+Karachi+75300"
+           target="_blank"
+           class="detail-circle">
+            📍
+        </a>
+        <h4>Our Location</h4>
+        <p>Shop # F8, Saima Paari Mall, Hyderi</p>
+    </div>
+
+    <div class="detail-item">
+        <a href="tel:03425914543" class="detail-circle">
+            📞
+        </a>
+        <h4>Call Us</h4>
+        <p>03425914543</p>
+    </div>
+
+    <div class="detail-item">
+        <button type="button" class="detail-circle" id="hoursButton">
+            🕐
+        </button>
+        <h4>Opening Hours</h4>
+        <p>Mon - Sat: 10 AM - 8 PM</p>
+    </div>
+
+</div>
+        </div>
+        
+        <form class="contact-form" id="contactForm">
+            <h2>Send a Message</h2>
+        
+            
+            <div>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span id="nameError"  class="error-name"></span>
+             </div>
+            
+            
+             <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <span id="emailError" class="error-email"></span>
+            </div>
+            
+            
+            <div>
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Type your message here..."></textarea>
+            <span id="messageError" class="error-msg"></span>
+            </div>
+
+            <button type="submit">Send Message</button>
+            <div id="response"></div>
+        </form>
+    </div>
+    </section>
+
+
+     <footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-box">
+            <h2>Elegance Boutique</h2>
+            <p>
+                Elegant styles for every special occasion.
+                Discover fashion that makes you feel beautiful.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="bridal.html">Bridal</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Customer Care -->
+        <div class="footer-box">
+            <h3>Customer Care</h3>
+
+            <a href="#" class="footer-info" data-info="shipping">
+                Shipping & Delivery
+            </a>
+
+            <a href="#" class="footer-info" data-info="returns">
+                Returns & Exchange
+            </a>
+
+            <a href="#" class="footer-info" data-info="size">
+                Size Guide
+            </a>
+
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+
+            <div class="footer-social-icons">
+
+                <a href="https://www.whatsapp.com/" target="_blank">
+                    <img src="images/whatsap.png" alt="WhatsApp">
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/insta.png" alt="Instagram">
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/fb.png" alt="Facebook">
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Information Popup -->
+    <div class="footer-popup" id="footerPopup">
+
+        <div class="popup-content">
+
+            <button class="close-popup" id="closePopup">&times;</button>
+
+            <h3 id="popupTitle"></h3>
+
+            <p id="popupText"></p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Elegance Boutique. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

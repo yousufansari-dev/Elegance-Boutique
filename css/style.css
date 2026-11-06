@@ -1,0 +1,1950 @@
+/* =====================================================
+   HOME PAGE
+   ===================================================== */
+
+/* Home Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gill Sans", sans-serif;
+    background-color: #fff8f3;
+    color: #3b2723;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background-color: #3b2723;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d9a0a8;
+}
+
+/* Hamburger */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+/* HOME - Carousel */
+.carousel {
+    position: relative;
+    padding: 0;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: relative;
+    height: 70vh;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.slide h1,
+.slide h2,
+.slide p,
+.slide .button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide h1,
+.slide h2 {
+    top: 30%;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.slide p {
+    top: 43%;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.slide .button {
+    top: 55%;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 24px;
+    background-color: #b76e79;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #8f4f5b;
+}
+
+/* HOME - Shop by Category */ 
+
+.categories {
+    background-color: #fff8f3;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #3b2723;
+}
+
+.categories > p {
+    margin-bottom: 35px;
+    color: #6b5550;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    width: 30%;
+    min-width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(59, 39, 35, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(59, 39, 35, 0.18);
+}
+
+.category-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    display: block;
+    background-color: #f3e2dc;
+}
+
+.category-card h3 {
+    margin: 18px 0 12px;
+    font-size: 22px;
+    color: #3b2723;
+}
+
+.category-card .button {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.category-card .button:hover {
+    background-color: #8f4f5b;
+}
+
+/* HOME - New Arrivals */
+
+.new-arrivals {
+    background-color: #f3e2dc;
+    text-align: center;
+}
+.home-product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    background-color: #f8eee9;
+}
+
+
+.new-arrivals h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.new-arrivals > p {
+    margin-bottom: 35px;
+    color: #6b5550;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.product-container-btn{
+    display: inline-block;
+    background-color: #3b2723;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.home-product-card {
+    width: 23%;
+    min-width: 220px;
+    background-color: #ffffff;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(59, 39, 35, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.home-product-card:hover {
+    transform: translateY(-8px);
+}
+
+.home-product-card h3 {
+    margin: 15px 10px 8px;
+    font-size: 19px;
+}
+
+.home-product-card .price {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #b76e79;
+}
+
+
+.bridal-preview {
+    background-color: #f3e2dc;
+}
+.bridal-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(59, 39, 35, 0.12);
+
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.bridal-images {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.bridal-images img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+.bridal-images img:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.bridal-item{
+    text-align: center;
+}
+.bridal-item p{
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.bridal-content {
+    width: 45%;
+    text-align: center;
+}
+
+.bridal-content h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.bridal-content p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+.bridal-content .button{
+    font-size: 15px;
+    padding: 10px 18px;
+}
+
+.product-preview {
+    background-color: #ffffff;
+}
+
+.about-preview {
+    background-color: #fff8f3;
+}
+
+.contact-preview {
+    background-color: #fff8f3;
+}
+
+.preview-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(59, 39, 35, 0.12);
+}
+.about-preview .preview-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.preview-card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.preview-card p {
+    margin-bottom: 20px;
+}
+
+/* HOME - FAQ */
+.faq {
+    background-color: #f3e2dc;
+}
+
+.faq-item {
+    max-width: 750px;
+    margin: 15px auto;
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background-color: #3b2723;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-answer {
+    padding: 18px;
+    text-align: left;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    background-color: #3b2723;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 40px 40px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-box h3 {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.footer-box p {
+    color: #f3e5df;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 280px;
+}
+
+.footer-box a {
+    display: block;
+    color: #f3e5df;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-box a:hover {
+    /* color: #d9a0a8; */
+    padding-left: 5px;
+}
+
+
+/* Social Icons */
+
+.footer-social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social-icons a {
+    width: 38px;
+    height: 38px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 !important;
+}
+
+.footer-social-icons a:hover {
+    /* background-color: #d9a0a8; */
+    padding-left: 0 !important;
+}
+
+.footer-social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+
+    padding: 18px 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #f3e5df;
+    font-size: 13px;
+}
+
+
+/* Popup */
+
+.footer-popup {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+
+    width: 90%;
+    max-width: 450px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    color: #3b2723;
+}
+
+.popup-content h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.popup-content p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.close-popup {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    cursor: pointer;
+
+    color: #3b2723;
+}
+
+.close-popup:hover {
+    color: #d9a0a8;
+}
+
+
+/* Responsive Footer */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-box p {
+        margin: auto;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+
+}
+
+
+/* =====================================================
+   HOME - RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        padding: 15px 5%;
+    
+    }
+
+
+
+    .header-right{
+        position: relative;
+    }
+
+    .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    flex-direction: column;
+    gap: 0;
+    background-color: #3b2723;
+    padding: 15px;
+    z-index: 1000;
+}
+.navbar.active{
+    display: flex;
+}
+.navbar a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    /* Carousel */
+    .carousel,
+    .slide {
+        height: 55vh;
+    }
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .slide h1,
+    .slide h2 {
+        top: 20%;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .slide p {
+        top: 35%;
+        font-size: 14px;
+    }
+    .slide .button{
+        top: 55%;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Sections */
+    section {
+        padding: 45px 5%;
+    }
+
+    /* Category */
+    .category-card {
+        width: 90%;
+    }
+
+    /* New Arrivals */
+    .home-product-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .header {
+        padding: 12px 4%;
+    }
+
+    .header-left {
+        gap: 6px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .search-box {
+        width: 105px;
+        height: 30px;
+    }
+
+    .search-box input {
+        width: 75px;
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    .search-box button {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+    }
+
+    .navbar {
+        top: 55px;
+        right: 4%;
+        width: 160px;
+        padding: 12px 16px;
+        box-sizing: border-box;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 15px;
+    }
+}
+
+/* =====================================================
+   BRIDAL - MOBILE RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .bridal-card {
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .bridal-images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .bridal-images img {
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
+        object-position: center;
+        background-color: #f3e2dc;
+    }
+
+    .bridal-content {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* ==============================
+   COLLECTION PAGE
+================================ */
+
+.collection-section {
+    text-align: center;
+    padding: 50px 6% 30px;
+}
+
+.collection-section h2 {
+    font-size: 36px;
+    color: #3b2723;
+    margin-bottom: 12px;
+}
+
+.collection-section p {
+    color: #6b514a;
+    font-size: 17px;
+}
+
+.collection-section img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    display: block;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+
+/* Product Sections */
+
+.product-section {
+    padding: 55px 6%;
+}
+
+.product-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #3b2723;
+    margin-bottom: 10px;
+}
+
+.product-section > p {
+    text-align: center;
+    color: #6b514a;
+    margin-bottom: 30px;
+}
+
+
+/* Product Grid */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* Product Card */
+
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(59, 39, 35, 0.12);
+    text-align: left;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    color: #3b2723;
+    margin: 15px 0 8px;
+}
+
+.product-card p strong{
+    display: none;
+}
+
+.product-card p {
+    color: #66514b;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.product-card label {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 600;
+    color: #3b2723;
+}
+
+.product-card select,
+.product-card input[type="number"] {
+    padding: 8px;
+    margin: 8px 0 12px;
+    border: 1px solid #c9aaa0;
+    border-radius: 5px;
+    background: #fff;
+}
+
+
+/* Buttons */
+
+.product-card .btn {
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Custom Design */
+
+.cta-banner {
+    margin: 40px 6%;
+    padding: 55px 25px;
+    text-align: center;
+    background: #f3e2dc;
+    border-radius: 12px;
+}
+
+.cta-banner h2 {
+    color: #3b2723;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.cta-banner p {
+    color: #5f4942;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #b76e79;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #8f4f5b;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .collection-section {
+        padding: 35px 5% 20px;
+    }
+
+    .collection-section h2 {
+        font-size: 28px;
+    }
+
+    .product-section {
+        padding: 40px 5%;
+    }
+
+    .product-section h2 {
+        font-size: 27px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 350px;
+    }
+
+    .cta-banner {
+        margin: 25px 5%;
+        padding: 40px 20px;
+    }
+
+    .cta-banner h2 {
+        font-size: 25px;
+    }
+
+}
+/* =====================================================
+   ABOUT PAGE
+   ===================================================== */
+
+.about-banner {
+    position: relative;
+    width: 100%;
+    margin-left: calc(50% - 50vw);
+    padding: 0;
+    overflow: hidden;
+}
+
+.about-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 248, 240, 0.88);
+    padding: 20px 50px;
+    width: 38%;
+}
+
+.banner-content h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.our-story {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 10%;
+}
+
+.story-image {
+    width: 45%;
+}
+
+.story-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.story-text {
+    width: 50%;
+}
+
+.story-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.philosophy {
+    text-align: center;
+    padding: 60px 8%;
+    background: #fff8f8;
+}
+
+.philosophy h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.philosophy-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.philosophy-boxes article {
+    background: white;
+    padding: 30px;
+    width: 30%;
+}
+
+.philosophy-boxes h3 {
+    margin-bottom: 15px;
+}
+
+.why-us {
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.why-us h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.why-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-boxes article {
+    padding: 25px;
+    border: 1px solid #ddd;
+}
+
+.why-boxes h3 {
+    margin-bottom: 12px;
+}
+
+.why-card {
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+}
+
+.why-card.selected {
+    border: 2px solid #3b2723;
+    background-color: #d9a0a8;
+    color: #3b2723;
+}
+
+.collection-intro {
+    text-align: center;
+    padding: 70px 20px;
+    background: #fff8f8;
+}
+
+.collection-intro h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.collection-intro p {
+    margin-bottom: 25px;
+}
+
+.collection-intro button {
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #3b2723;
+    color: white;
+    transition: 0.3s;
+}
+
+.collection-intro button:hover {
+    background-color: #d9a0a8;
+    color: #3b2723;
+    transform: translateY(-3px);
+}
+
+
+/* ABOUT - RESPONSIVE */
+@media (max-width: 768px) {
+
+    .our-story {
+        flex-direction: column;
+    }
+
+    .story-image,
+    .story-text {
+        width: 100%;
+    }
+
+    .philosophy-boxes {
+        flex-direction: column;
+    }
+
+    .philosophy-boxes article {
+        width: 100%;
+    }
+
+    .why-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .about-banner {
+        height: auto;
+        min-height: auto;
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner-content {
+        width: 90%;
+        max-width: 500px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .banner-content h1{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .banner-content p{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .about-banner img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+
+/* =====================================================
+   CONTACT PAGE
+   ===================================================== */
+
+.social-links h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #2c2c2c;
+}
+
+.social-links .icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-links .icons a {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    color: #b08d57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.social-links .icons a:hover {
+    background-color: #b08d57;
+    color: #ffffff;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff8f3;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info {
+    width: 45%;
+    padding: 50px 40px;
+    background: #3b2723;
+    color: white;
+}
+
+.contact-info h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contact-info .intro {
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #f3e5df;
+}
+
+.info-box {
+    margin-bottom: 25px;
+    color:white;
+}
+
+.info-box h3 {
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+.info-box p {
+    color: #f3e5df;
+    font-size: 14px;
+}
+
+.contact-form {
+    width: 55%;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #3b2723;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #374151;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #3b2723;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #d9a0a8;
+    color: #3b2723;
+}
+
+.error-msg,
+.error-name,
+.error-email {
+    display: block;
+    color: red;
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#response {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.detail-item {
+    text-align: center;
+    color: white;
+}
+
+.detail-circle {
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 23px;
+    transition: 0.3s;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.detail-circle:hover {
+    background-color: #d9a0a8;
+}
+
+.detail-item h4 {
+    margin: 5px 0;
+    color: white;
+}
+
+.detail-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #f3e5df;
+}
+
+/* ================================
+   CONTACT PAGE - MOBILE RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Contact Us information - TOP */
+    .contact-info {
+        width: 100%;
+        order: 1;
+        text-align: center;
+    }
+
+    .contact-info h1 {
+        font-size: 28px;
+    }
+
+    .contact-info .intro {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .info-box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contact-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .detail-item {
+        text-align: center;
+    }
+
+    /* Form - BELOW */
+    .contact-form {
+        width: 100%;
+        order: 2;
+        box-sizing: border-box;
+    }
+
+    .contact-form h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+        min-height: 130px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   BRIDAL PAGE - CONTENT ONLY
+   Header & Footer CSS is NOT included
+========================================= */
+
+
+/* =========================================
+   BRIDAL INTRO / TOP
+========================================= */
+
+.bridal-content,
+.featured-video,
+.bridal-gallery,
+.bridal-products,
+.bridal-services {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.bridal-content {
+    text-align: center;
+    padding: 55px 20px 25px;
+}
+
+.bridal-content h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+    color: #3b2723;
+}
+
+.bridal-content p {
+    font-size: 17px;
+    color: #6b514b;
+    margin: 0;
+}
+
+
+/* =========================================
+   FEATURED VIDEO
+========================================= */
+
+.featured-video {
+    max-width: 900px;
+    margin: 25px auto 55px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.featured-video h2 {
+    font-size: 28px;
+    color: #3b2723;
+    margin-bottom: 25px;
+}
+
+.featured-video video {
+    width: 100%;
+    max-width: 850px;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(59, 39, 35, 0.18);
+}
+
+.featured-video h3 {
+    margin-top: 22px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #3b2723;
+}
+
+.featured-video p {
+    color: #6b514b;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   BRIDAL GALLERY
+========================================= */
+
+.bridal-gallery {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+    padding: 0 20px;
+}
+
+.bridal-gallery h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #3b2723;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.gallery-container a {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f3e2dc;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-container a:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   BRIDAL PRODUCT SECTIONS
+   NIKKAH / MEHNDI / BARAAT / WALIMA
+========================================= */
+
+.bridal-products {
+    max-width: 1200px;
+    margin: 0 auto 75px;
+    padding: 0 20px;
+}
+
+.bridal-products h2 {
+    text-align: center;
+    color: #3b2723;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.bridal-intro {
+    text-align: center;
+    color: #6b514b;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   PRODUCT CARD CONTAINER
+   3 CARDS IN ONE ROW
+========================================= */
+
+.bridal-product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.bridal-product-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(59, 39, 35, 0.13);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0dfd8;
+}
+
+.bridal-product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(59, 39, 35, 0.20);
+}
+
+
+/* =========================================
+   CARD IMAGE
+========================================= */
+
+.bridal-product-card > a {
+    display: block;
+    overflow: hidden;
+}
+
+.bridal-product-card > a img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.bridal-product-card:hover > a img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   CARD INFORMATION
+========================================= */
+
+.bridal-card-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.bridal-card-info h3 {
+    color: #3b2723;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.bridal-card-info p {
+    color: #6b514b;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 67px;
+    margin: 0 0 12px;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.bridal-card-info span {
+    display: block;
+    color: #b76e79;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+
+/* =========================================
+   SHOP NOW BUTTON
+========================================= */
+
+.bridal-card-info .btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #b76e79;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.bridal-card-info .btn:hover {
+    background: #8f4f5b;
+}
+
+
+/* =========================================
+   LIGHTBOX IMAGE CURSOR
+========================================= */
+
+.bridal-gallery a,
+.bridal-product-card > a {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bridal-product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-container img {
+        height: 300px;
+    }
+
+    .bridal-product-card > a img {
+        height: 350px;
+    }
+
+    .featured-video video {
+        height: 400px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .bridal-content {
+        padding: 40px 15px 20px;
+    }
+
+    .bridal-content h1 {
+        font-size: 30px;
+    }
+
+    .bridal-content p {
+        font-size: 15px;
+    }
+
+    .featured-video {
+        margin-bottom: 45px;
+        padding: 0 15px;
+    }
+
+    .featured-video h2,
+    .bridal-gallery h2,
+    .bridal-products h2 {
+        font-size: 25px;
+    }
+
+    .featured-video video {
+        height: 300px;
+    }
+
+    /* Gallery becomes 1 column on mobile */
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .gallery-container img {
+        height: 350px;
+    }
+
+    /* Products become 1 column on mobile */
+    .bridal-product-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .bridal-product-card > a img {
+        height: 420px;
+    }
+
+    .bridal-card-info {
+        padding: 18px;
+    }
+
+    .bridal-card-info p {
+        min-height: auto;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .featured-video video {
+        height: 250px;
+    }
+
+    .gallery-container img {
+        height: 300px;
+    }
+
+    .bridal-product-card > a img {
+        height: 360px;
+    }
+
+}
+
+/* ================= BRIDAL SERVICES ================= */
+
+.bridal-services {
+    padding: 70px 6%;
+    background: #fff8f3;
+    text-align: center;
+}
+
+.bridal-services h2 {
+    font-size: 32px;
+    color: #3b2723;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #ead8d1;
+    box-shadow: 0 5px 15px rgba(59, 39, 35, 0.10);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(59, 39, 35, 0.18);
+    border-color: #b76e79;
+}
+
+.service-card h3 {
+    color: #3b2723;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bridal-services {
+        padding: 50px 5%;
+    }
+
+    .bridal-services h2 {
+        font-size: 26px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+}
